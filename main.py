@@ -7,7 +7,7 @@ question_bank = []
 
 
 for question in question_data:
-    new_q = Question(question["text"], question["answer"])
+    new_q = Question(question["question"], question["correct_answer"])
     question_bank.append(new_q)
 
 quiz = QuizBrain(question_bank)
